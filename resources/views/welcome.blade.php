@@ -1,100 +1,115 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.template')
+@section('content')
 
-        <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+<!-- Booking now form wrapper html start -->
+<div class="booking-form-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="form-wrap ">
+								<div class="form-headr"></div>
+                                <h2>Compare vehicle rate</h2>
+                                <p class="shift">Search all vehicle companies in Nigeria closest to your location, and get best fair rates within seconds </p>
+								<div class="form-select">
+									<form>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+										<div class="col-sm-12 custom-select-box tec-domain-cat3">
+											<div class="row">
+												<div id="panel">
+												<select id="start" onchange="calcRoute();" class="selectpicker custom-select-box tec-domain-cat">
+												  <option value="">From</option>
+												  <option value="chicago, il">Chicago</option>
+												  <option value="st louis, mo">St Louis</option>
+												  <option value="joplin, mo">Joplin, MO</option>
+												  <option value="oklahoma city, ok">Oklahoma City</option>
+												  <option value="amarillo, tx">Amarillo</option>
+												  <option value="gallup, nm">Gallup, NM</option>
+												  <option value="flagstaff, az">Flagstaff, AZ</option>
+												  <option value="winona, az">Winona</option>
+												  <option value="kingman, az">Kingman</option>
+												  <option value="barstow, ca">Barstow</option>
+												  <option value="san bernardino, ca">San Bernardino</option>
+												  <option value="los angeles, ca">Los Angeles</option>
+												  <option value="khulna">Khulna, Bangladesh</option>
+												  <option value="terokhada">Terokhada, Bangladesh</option>
+												</select>
+												</div>
 
-            .full-height {
-                height: 100vh;
-            }
+											</div>
+										</div>
+										<div class="col-sm-12 custom-select-box tec-domain-cat4">
+											<div class="row">
+												<div>
+													<select id="end" onchange="calcRoute();"  class="selectpicker custom-select-box tec-domain-cat">
+														<option value="">To</option>
+													  <option value="chicago, il">Chicago</option>
+													  <option value="st louis, mo">St Louis</option>
+													  <option value="joplin, mo">Joplin, MO</option>
+													  <option value="oklahoma city, ok">Oklahoma City</option>
+													  <option value="amarillo, tx">Amarillo</option>
+													  <option value="gallup, nm">Gallup, NM</option>
+													  <option value="flagstaff, az">Flagstaff, AZ</option>
+													  <option value="winona, az">Winona</option>
+													  <option value="kingman, az">Kingman</option>
+													  <option value="barstow, ca">Barstow</option>
+													  <option value="san bernardino, ca">San Bernardino</option>
+													  <option value="los angeles, ca">Los Angeles</option>
+													  <option value="Satkhira">Satkhira, Bangladesh</option>
+													  <option value="terokhada">Terokhada, Bangladesh</option>
+													</select>
+												</div>
+											</div>
+                                        </div>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
 
-            .position-ref {
-                position: relative;
-            }
+										<div class="col-sm-12 custom-select-box tec-domain-cat4">
+											<div class="row">
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+												<div>
 
-            .content {
-                text-align: center;
-            }
+														<input class="form-control custom-select-box tec-domain-cat5" type="date" name="date"  />
 
-            .title {
-                font-size: 84px;
-            }
+												</div>
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+											</div>
+										</div>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+										<div class="form-button">
+											<button type="submit" class="btn form-btn btn-lg btn-block">Search Transport Company</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <!-- Booking now form wrapper html Exit -->
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+
+    <!-- anytime-anywhere html start -->
+		<div class="anytime-anywhere">
+			<div class="row">
+				<div class="anytime-wrap">
+					<h1>BEST <br/>RATES!</h1>
+					<div class="anytime-text">
+						<p><i class="fa fa-custom fa-circle-o"></i>Find cheapest fare from over 100 transport companies.</p>
+						<p><i class="fa fa-custom fa-circle-o"></i>Compare rates and find the one nearest to you.</p>
+						<p><i class="fa fa-custom fa-circle-o"></i>Avoid long wait time | quick search.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- anytime-anywhere html Exit -->
+
+
+
+
+
+
+@stop

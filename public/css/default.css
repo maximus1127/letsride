@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: 	url('../fonts/font/fontawesome-webfont.eot?v=4.0.3');
+  src: 	url('../fonts/font/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), 
+		url('../fonts/font/fontawesome-webfont.woff?v=4.0.3') format('woff'), 
+		url('../fonts/font/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), 
+		url('../fonts/font/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	
+	 
+	min-height: 800px;
+}
+
+.navbar-default .navbar-collapse .column> .dl-menuwrapper a {
+	text-decoration: none;
+	 font-weight: bold;
+}
+.header-menu-wrap .navbar .main .column #dl-menu> a:active{}
+.navbar-default .navbar-collapse .column> .dl-menuwrapper a:hover {
+	color: #F1C40F;
+	 
+}  
+
+ .dl-menuwrapper .dl-menu.dl-menuopen:hover .header-menu-wrap .navbar .main .column #dl-menu a{background:#fff;}
+
+ 
+.header-menu-wrap .navbar .main  .column #dl-menu> a{padding: 2px 7px !important;
+padding: 6px 12px !important;
+color: #F1C40F;
+float: right;
+width: 49px;
+height: 49px;
+position: relative;
+z-index: 100;
+font-size: 26px;}
+
+.header-menu-wrap .navbar .main  .column #dl-menu> a:focus{border:none;outline:none;}
+.header-menu-wrap .navbar .main  .column #dl-menu> ul> li{font-size:12px;}
+
+
+.main,
+.container > header {
+	width: 100%;
+	float:left;
+	 
+}
+
+.dl-menuwrapper a.dl-active,
+.dl-menuwrapper ul {
+background: #fff;
+}
+
+.main {
+	max-width: 69em;
+	 
+}
+
+.column {
+	float: right;
+	position: relative;
+	margin-left: -5px;
+	width: 276px;
+}
+
+.column:nth-child(2) {
+	min-height: 400px;
+	box-shadow: -1px 0 0 rgba(0,0,0,0.1);
+	background: url(../images/clickhere.png) 90px 0 no-repeat;
+}
+
+.column:last-child:before {
+	content: '';
+	position: absolute;
+	height: 7px;
+	background: #ceccc6;
+	top: 100px;
+	left: 10px;
+}
+
+.column p {
+
+	padding: 0;
+	margin: 0;
+	text-align: right;
+	line-height: 1.5;
+}
+
+.container > header {
+	text-align: center;
+	background: rgba(0,0,0,0.01);
+}
+
+.container > header span {
+	display: block;
+	color: #ceccc6;
+}
+
+/* Header Style */
+.codrops-top {
+	text-transform: uppercase;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.99);
+	color: #000;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+	 
+	
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 0.5em;
+	 
+	border: 3px solid #b1aea6;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	border-color: #89867e;
+	color: #89867e;
+}
+
+@media screen and (max-width: 46.0625em) {
+
+	.main {
+		padding: 0;
+	}
+
+	.column {
+		 
+		min-width: auto;
+		min-height: auto;
+	 
+	}
+
+	.column p {
+		text-align: left;
+
+	}
+
+	.column:nth-child(2) {
+		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+		background-position: 90px 3em;
+	}
+}

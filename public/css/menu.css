@@ -1,0 +1,175 @@
+/*-------------------------------------
+	MENU
+-------------------------------------*/
+nav  ul li a{
+text-decoration:none;
+}
+
+ul.sf-menu {
+	position: relative;
+	float: right;
+}
+
+ul.sf-menu > li {
+	margin: 0;
+}
+
+ul.sf-menu li a,
+ul.sf-menu li span {
+	display: block;
+	padding: 0 1em;
+	font: 12px/32px 'Cabin', sans-serif;
+	text-transform: uppercase;
+}
+
+ul.sf-menu > li > a,
+ul.sf-menu > li > span {
+	padding: 0 31px;
+	font: 14px/112px 'Cabin', sans-serif;
+	height: 90px;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+ul.sf-menu > li.sfHover.parent > a,
+ul.sf-menu > li.sfHover.parent > span,
+ul.sf-menu > li.parent > a:hover,
+ul.sf-menu > li.parent > span:hover {
+	background:transparent !important;
+	text-decoration: none;
+}
+
+ul.sf-menu li:hover ul,
+ul.sf-menu li.sfHover ul {
+	top: 85px;
+	width: auto !important;
+}
+
+ul.sf-menu > li:hover > ul,
+ul.sf-menu > li.sfHover > ul { 
+	padding-top: 5px;
+}
+
+ul.sf-menu ul {
+	width: 168px;
+}
+
+ul.sf-menu > li:hover > ul > li:first-child,
+ul.sf-menu > li.sfHover > ul > li:first-child {
+	padding-top: 12px;
+}
+
+ul.sf-menu > li:hover > ul > li.lastItem,
+ul.sf-menu > li.sfHover > ul > li.lastItem {
+	padding-bottom: 14px;
+}
+
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left: 160px;
+	top: 0px;
+	border-left: 1px solid #5c646b;
+}
+
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left: 140px;
+	top: -0.5em;
+}
+
+ul.sf-menu ul {
+	padding: 12px 0 14px;
+}
+
+ul.sf-menu ul li a,
+ul.sf-menu ul li span {
+	display: block;
+	line-height: 32px;
+	text-align: left;
+	padding-left: 20px;
+	text-decoration: none;
+}
+
+ul.sf-menu ul li a:hover,
+ul.sf-menu ul li span:hover {
+	background: #5b646b;
+	color: #fff;
+}
+
+ul.sf-menu ul li:first-child a,
+ul.sf-menu ul li:first-child span {
+	background: none;
+	text-decoration: none;
+}
+
+ul.sf-menu ul li:first-child a:hover,
+ul.sf-menu ul li:first-child span:hover {
+	background: #5b646b;
+}
+
+select.select-menu {
+	display: none;
+}
+
+.sf-menu > li > a,.sf-menu > li > span {
+	color:#4e4e4e;
+}
+
+.sf-menu > li > a:hover, .sf-menu > li > a:active, .sf-menu > li.sfHover > a, .sf-menu > li.sfHover > span, .sf-menu > li:hover > span, .sf-menu > li.current > a, .sf-menu > li.current > span, .sf-menu > li.active > a, .sf-menu > li.active > span {
+	background: transparent;
+}
+
+.sf-menu > li > a:hover, .sf-menu > li.sfHover > a, .sf-menu > li.sfHover > span, .sf-menu > li:hover > span{
+	color: #ffffff;
+}
+
+.sf-menu ul {
+	background: #646d74;
+}
+
+.sf-menu ul > li > a,
+.sf-menu ul > li > span {
+	color: #ffffff;
+}
+
+.sf-menu ul > li > a:hover, .sf-menu ul > li:hover > a, .sf-menu ul > li:hover > span, .sf-menu ul > li > a:active, .sf-menu ul > li.current > a, .sf-menu ul > li.current > span, .sf-menu ul > li.sfHover > a, .sf-menu ul > li.sfHover > span, .sf-menu ul > li.active > span, .sf-menu ul > li.active > a {
+	color: #fff;
+}
+@media only screen and (min-width: 120px) and (max-width: 1200px) {
+.sf-menu{
+display:block;
+}
+ul.sf-menu > li.active.parent > a, ul.sf-menu > li.active.parent > span{
+background:none !important;
+}
+.mean-container .mean-nav ul li a .mean-expand {
+
+}
+ul.sf-menu > li > a, ul.sf-menu > li > span {
+padding: 0 31px;
+font: 14px/76px 'Cabin', sans-serif;
+height: 75px;
+color: #fff;
+text-decoration: none;
+}
+ul.sf-menu li:hover ul, ul.sf-menu li.sfHover ul {
+top: 58px;
+width: auto !important;
+}
+ul.sf-menu > li.sfHover.parent > a, ul.sf-menu > li.sfHover.parent > span, ul.sf-menu > li.parent > a:hover, ul.sf-menu > li.parent > span:hover{
+border:none;
+}
+.mean-container .mean-nav ul li a{
+border:none !important;
+}
+ul.sf-menu > li.parent > a:hover{
+background:none !important;
+}
+ul.sf-menu > li.parent > a{
+background:none !important;
+}
+.sf-menu > li > a:hover{
+border:1px solid;
+}
+}

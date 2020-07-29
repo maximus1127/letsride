@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
+
+Route::group(['namespace' => 'App'], function () {
+    // login url
+    Route::get('/processlogin', 'CustomersController@processlogin');
+
+
+    });
+
+
 Route::get('/', function () {
     return view('welcome');
 });
